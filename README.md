@@ -1,8 +1,8 @@
 # WebViewAndJS
-> UIWebView和WKWebView与JavaScript的交互方式
+> UIWebView和WKWebView与JavaScript交互简介
 
 ## 一、介绍
-> 苹果在iOS2推出了UIWebView，用于移动端加载网页等资源。但是它从设计之初就比较笨重，存在占用内存过多，交互各种限制等问题。所以在iOS8.0之后，苹果对UIWebView进行优化和重造，推出了WKWebView用于取代UIWebView。
+> 苹果在iOS2推出了UIWebView，用于移动端加载网页等资源。但是它从设计之初就比较笨重，存在占用内存过多，内存泄漏等问题。所以在iOS8.0之后，苹果对UIWebView进行优化和重造，推出了WKWebView用于取代UIWebView。
 
 ## 二、大纲
 - WKWebView对比UIWebView的性能优势；
