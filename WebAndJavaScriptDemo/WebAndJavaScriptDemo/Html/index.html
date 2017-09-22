@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UIWebView--JS与OC交互</title>
+<style>
+    .divClass1{ position:absolute; width:60%; height:150px; left:25%; top:25%}
+    .divClass2{ position:absolute; width:60%; height:150px; left:25%; top:40%}
+    .inputClass{ position:absolute; width:40%; height:50px; left:25%; top:10px}
+</style>
+</head>
+
+<script type="text/javascript">
+function call() {
+    shopping.gotoPayment("201709191501")
+}
+function callback(str) {
+    alert(str);
+}
+function alerCallback() {
+    alert('成功！');
+}
+</script>
+
+<body>
+<div class="divClass1">
+<input class="inputClass" type="button" value="JS调起OC方法（无参），有回调" onclick="shopping.getUserInfo()">
+</div>
+<div class="divClass2">
+<input class="inputClass" type="button" value="JS调起OC方法（有参），有回调" onclick="call()">
+</div>
+</body>
+</html>
