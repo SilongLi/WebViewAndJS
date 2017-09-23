@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>WKWebView--JS与OC交互</title>
+<title>WKWebView(JS与OC交互)</title>
 <style>
     .divClass1{ position:absolute; width:60%; height:150px; left:25%; top:25%}
     .divClass2{ position:absolute; width:60%; height:150px; left:25%; top:40%}
@@ -11,19 +11,19 @@
 </head>
 
 <script type="text/javascript"> 
-function call() {
-    window.webkit.messageHandlers.gotoPayment.postMessage('201709191501');
-}
-function getUserInfo() {
-    window.webkit.messageHandlers.getUserInfo.postMessage(null);
-}
+    function call() {
+        window.webkit.messageHandlers.gotoPayment.postMessage('201709191501');
+    }
+    function getUserInfo() {
+        window.webkit.messageHandlers.getUserInfo.postMessage(null);
+    }
 
-function callback(message) {
-    alert(message);
-}
-function alerCallback() {
-    alert('成功！');
-}
+    function callback(message) {
+        alert(message);
+    }
+    function alerCallback() {
+        alert('成功！');
+    }
 </script>
 
 <body> 

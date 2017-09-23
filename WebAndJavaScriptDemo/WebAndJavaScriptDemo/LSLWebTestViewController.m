@@ -16,6 +16,7 @@
 - (void)gotoPayment:(NSString *)orderID;
 @end
 
+/**************** 华丽的分割线 ***********************/
 
 @interface LSLWebTestViewController () <JSObjcDelegate>
 @property (nonatomic, strong) JSContext *jsContext;

@@ -21,7 +21,6 @@
     return [[LSLWKScriptMessageHandler alloc] initWithDelegate:delegate];
 }
 
-
 #pragma mark - <WKScriptMessageHandler>
 
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {

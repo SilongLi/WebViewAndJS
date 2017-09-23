@@ -11,7 +11,7 @@
 
 @interface LSLWKScriptMessageHandler : NSObject <WKScriptMessageHandler>
 
-@property (nullable, nonatomic, weak)id <WKScriptMessageHandler> delegate;
+@property (nullable, nonatomic, weak) id<WKScriptMessageHandler> delegate;
 
 /** 创建方法 */
 - (instancetype)initWithDelegate:(id<WKScriptMessageHandler>)delegate;

@@ -9,8 +9,8 @@
 #import "LSLWKWebTestViewController.h"
 #import "LSLWKScriptMessageHandler.h"
 
-static NSString *const kGetUserInfoKey = @"getUserInfo";    // OC调用JS无参
-static NSString *const kGotoPaymentKey = @"gotoPayment";    // OC调用JS有参
+static NSString * const kGetUserInfoKey = @"getUserInfo";    // OC调用JS无参
+static NSString * const kGotoPaymentKey = @"gotoPayment";    // OC调用JS有参
 
 @interface LSLWKWebTestViewController () <WKUIDelegate, WKNavigationDelegate, WKScriptMessageHandler>
 

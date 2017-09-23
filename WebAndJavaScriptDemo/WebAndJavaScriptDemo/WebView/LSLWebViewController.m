@@ -8,7 +8,6 @@
 
 #import "LSLWebViewController.h"
 
-
 @interface LSLWebViewController () <UIWebViewDelegate>
 
 @property (nonatomic, strong) UIWebView *webView;
@@ -82,8 +81,9 @@
     [self lsl_webViewDidFinishLoad:webView];
 }
 
+// 让子类去重写此方法，做自己的事情
 - (void)lsl_webViewDidFinishLoad:(UIWebView *)webView {
-    // 做自己的事情
+    // do something
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
@@ -197,6 +197,7 @@
 - (void)closeWebView {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 #pragma mark - setter and getter
 
 - (UIWebView *)webView {

@@ -8,7 +8,6 @@
 
 #import "LSLWKWebViewController.h"
 
-
 static NSString *const kProgressKey = @"estimatedProgress";
 
 @interface LSLWKWebViewController () <WKUIDelegate, WKNavigationDelegate>
@@ -76,6 +75,7 @@ static NSString *const kProgressKey = @"estimatedProgress";
     self.webView.frame = frame;
     self.progressView.frame = CGRectMake(0, 64, frame.size.width, 5);
 }
+
 #pragma mark - <WKNavigationDelegate>
 
 // 页面开始加载时调用
@@ -143,7 +143,6 @@ static NSString *const kProgressKey = @"estimatedProgress";
         
     } else if(self.htmlString.length > 0) {
         [self loadWebViewWithURLString:self.htmlString];
-        
     } else {}
 }
 
